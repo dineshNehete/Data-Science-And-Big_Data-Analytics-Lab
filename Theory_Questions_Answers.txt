@@ -1,0 +1,138 @@
+Q: What is data wrangling?
+A: Data wrangling, also known as data munging, refers to the process of cleaning, transforming, and preparing raw data into a more suitable format for analysis.
+
+Q: What is data preprocessing?
+A: Data preprocessing involves the steps taken to prepare raw data for analysis. It includes tasks such as cleaning the data, handling missing values, dealing with outliers, and transforming variables.
+
+Q: What is data standardization?
+A: Data standardization, also known as data normalization, is the process of transforming data to have specific properties, such as zero mean and unit variance. It is used to bring data onto a common scale for fair comparisons.
+
+Q: What is normalization?
+A: Normalization is a data preprocessing technique used to scale numerical features to a standardized range. It ensures that variables with different scales or units have a comparable impact on the analysis.
+
+Q: What is min-max normalization?
+A: Min-max normalization, also known as rescaling, scales the data to a specific range, often between 0 and 1. It ensures that the minimum value becomes 0 and the maximum value becomes 1.
+
+Q: What is z-score normalization?
+A: Z-score normalization, also known as standardization, transforms the data to have zero mean and unit standard deviation. It allows for the comparison of data points in terms of their distance from the mean.
+
+Q: How are categorical variables converted to a quantitative format?
+A: Categorical variables can be converted to a quantitative format using encoding techniques such as one-hot encoding or label encoding. One-hot encoding creates binary columns for each category, while label encoding assigns a unique numeric value to each category.
+
+Q: What are the commonly used data types?
+A: Some commonly used data types include numeric data types (integer, floating-point), categorical data types (string, boolean), and date and time data types (datetime, timestamp).
+
+Q: What is encoding in the context of data preprocessing?
+A: Encoding in data preprocessing refers to the process of transforming categorical variables into a numerical representation that can be used for analysis.
+
+Q: What is one-hot encoding?
+A: One-hot encoding is a technique used to convert categorical variables into a binary representation. It creates binary columns for each category, indicating the presence or absence of that category for each observation.
+
+Q: How does one-hot encoding work?
+A: One-hot encoding works by creating binary columns for each category in the original categorical variable. If an observation belongs to a category, the corresponding column value is 1; otherwise, it is 0.
+
+Q: What is label encoding?
+A: Label encoding is a technique used to convert categorical variables into numeric labels. It assigns a unique numeric value to each category, representing different levels of the categorical variable.
+
+Q: How does label encoding work?
+A: Label encoding works by assigning a numeric label to each category in the original categorical variable. Each category is mapped to a specific integer value, allowing machine learning algorithms to work with categorical data.
+
+Q: What is the difference between one-hot encoding and label encoding?
+A: One-hot encoding creates binary columns for each category, while label encoding assigns a unique numeric label to each category.
+
+Q: What are the advantages of one-hot encoding?
+A: One-hot encoding allows categorical variables to be used directly as input for machine learning algorithms. It preserves the distinctiveness of each category and avoids imposing any arbitrary ordinal relationship between categories.
+
+Q: When is label encoding preferred over one-hot encoding?
+A: Label encoding is preferred when the categorical variable has an inherent ordinal relationship between categories. In such cases, label encoding captures the ordinality of the categories and can be beneficial for certain algorithms that can leverage this information.
+
+
+Assignment-3:
+Q: What are categorical variables?
+A: Categorical variables are qualitative variables that represent different categories or groups. They do not have a numerical value but rather indicate membership in a particular category.
+
+Q: Can you provide examples of categorical variables?
+A: Yes, examples of categorical variables include gender (male, female), marital status (married, single, divorced), educational level (high school, college, graduate), and car types (sedan, SUV, hatchback).
+
+Q: What are numeric variables?
+A: Numeric variables are quantitative variables that represent numerical values or quantities. They can be measured on a continuous or discrete scale.
+
+Q: Can you provide examples of numeric variables?
+A: Certainly, examples of numeric variables include age (in years), income (in dollars), temperature (in Celsius or Fahrenheit), and number of children.
+
+Q: What are measures of central tendency?
+A: Measures of central tendency are statistical measures that represent the center or typical value of a dataset. They provide information about where the data points are clustered.
+
+Q: What is the mean?
+A: The mean is a measure of central tendency calculated as the sum of all values in a dataset divided by the number of observations. It represents the average value of the dataset.
+
+Q: What is the median?
+A: The median is a measure of central tendency that represents the middle value in a dataset when arranged in ascending or descending order. It divides the dataset into two equal halves.
+
+Q: What is the mode?
+A: The mode is a measure of central tendency that represents the value that appears most frequently in a dataset. It can be used for both categorical and numerical data.
+
+Q: What are measures of variability?
+A: Measures of variability describe the spread or dispersion of data points in a dataset. They provide information about how the data is distributed around the central tendency.
+
+Q: What is standard deviation?
+A: The standard deviation is a measure of variability that measures the average deviation of data points from the mean. It provides information about how tightly or loosely the data is clustered around the mean.
+
+Q: What is range?
+A: The range is a measure of variability that represents the difference between the maximum and minimum values in a dataset. It gives an idea of the total spread of the data.
+
+Q: What is the interquartile range (IQR)?
+A: The interquartile range is a measure of variability that represents the range between the first quartile (Q1) and the third quartile (Q3) in a dataset. It measures the spread of the middle 50% of the data.
+
+Q: What are quartiles?
+A: Quartiles divide a dataset into four equal parts, each containing 25% of the data. The first quartile (Q1) is the value below which 25% of the data falls, the second quartile (Q2) is the same as the median, and the third quartile (Q3) is the value below which 75% of the data falls.
+
+Q: What is the purpose of calculating summary statistics for a dataset?
+A: Summary statistics provide a concise summary of the main characteristics of a dataset, such as measures of central tendency and variability. They help in understanding the distribution and properties of the data, making comparisons between groups, identifying outliers, and gaining insights for further analysis.
+
+Q: Define the concept of a categorical variable and provide an example from the given dataset.
+A: A categorical variable is a variable that represents distinct categories or groups. It can take on a limited number of values that belong to a specific category. In the given dataset, the age groups can be considered a categorical variable. For example, if the age groups are "20-30," "30-40," "40-50," etc., each observation falls into one of these mutually exclusive categories.
+
+Q: Explain the difference between numeric variables and categorical variables.
+A: Numeric variables represent numerical values or quantities and can be used for mathematical calculations. Examples in the dataset include age and income. On the other hand, categorical variables represent distinct categories or groups and can take on a limited number of values. Age groups in the dataset are an example of a categorical variable.
+
+Q: What are measures of central tendency? Provide examples of measures of central tendency.
+A: Measures of central tendency are statistical measures that represent the center or typical value of a dataset. They include the mean, median, and mode. The mean is the average value, the median is the middle value, and the mode is the most frequently occurring value.
+
+Q: How do you calculate the mean of a dataset? What is the significance of the mean?
+A: The mean is calculated by summing all the values in a dataset and dividing the sum by the total number of observations. It represents the average value of the dataset. The significance of the mean is that it provides a measure of the central tendency and helps in understanding the average value of the variable.
+
+Q: Define the median and explain when it is a better measure of central tendency than the mean.
+A: The median is the middle value in a dataset when it is arranged in ascending or descending order. It divides the dataset into two equal halves. The median is a better measure of central tendency than the mean when the dataset has extreme values or outliers. It is less affected by extreme values and provides a more robust representation of the typical value.
+
+Q: What is the mode of a dataset and in what situations is it useful?
+A: The mode of a dataset is the value that appears most frequently. It is useful when you want to identify the most common value or category in a dataset. The mode is particularly helpful for categorical variables, but it can also be used for numeric variables.
+
+Q: Describe the concept of variability in a dataset.
+A: Variability in a dataset refers to the spread or dispersion of the data points. It provides information about how the data is spread out from the central tendency measures. Measures of variability include the range, standard deviation, and interquartile range.
+
+Q: What is the standard deviation and what does it represent in terms of data dispersion?
+A: The standard deviation is a measure of the average deviation of data points from the mean. It quantifies the spread or dispersion of the data. A higher standard deviation indicates greater variability or dispersion of data points from the mean.
+
+Q: What is the range of a dataset and how is it calculated?
+A: The range of a dataset is the difference between the maximum and minimum values. It provides an estimate of the total spread of the data. The range is calculated by subtracting the minimum value from the maximum value.
+
+Q: Explain the interquartile range (IQR) and its importance in understanding data variability.
+A: The interquartile range (IQR) is a measure of statistical dispersion that represents the spread of the middle 50% of the data. It is calculated as the difference between the third quartile (Q3) and the first quartile (Q1). The IQR is less affected by extreme values or outliers, making it a robust measure of data variability.
+
+Q: How would you group a dataset based on a categorical variable using pandas?
+A: To group a dataset based on a categorical variable using pandas, you can use the groupby() function. You specify the categorical variable as the argument to groupby(). For example, to group the dataset by age groups, you can use df.groupby('age_group').
+
+Q: Describe the process of calculating summary statistics for a numeric variable grouped by a categorical variable.
+A: To calculate summary statistics for a numeric variable grouped by a categorical variable using pandas, you can use the groupby() function followed by the desired summary function. For example, to calculate the mean income for each age group, you can use df.groupby('age_group')['income'].mean().
+
+Q: How can summary statistics be used to gain insights and make comparisons between different groups in the dataset?
+A: Summary statistics provide numerical values that summarize the characteristics of different groups in a dataset. They can be used to compare the central tendency and variability between groups, identify patterns or trends, and draw meaningful insights from the data. Summary statistics enable researchers to make data-driven decisions and understand the differences or similarities between various groups.
+
+Q: Discuss the advantages and limitations of using summary statistics to analyze a dataset.
+A: Advantages of using summary statistics include providing a concise overview of the dataset, enabling comparisons between different groups, and facilitating data-driven decision-making. Summary statistics are easy to understand and interpret. However, limitations include the fact that they provide a simplified representation of the data, may not capture the full complexity of the dataset, and can be influenced by outliers or extreme values.
+
+
+
+
+
