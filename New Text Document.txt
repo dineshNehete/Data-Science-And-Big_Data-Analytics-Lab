@@ -1,0 +1,81 @@
+##Theory
+
+
+# Data Wrangling, Preprocessing, and Standardization
+
+## Data Wrangling
+
+>Data wrangling, also known as data munging, is the process of cleaning, transforming, and preparing raw data into a more suitable format for analysis. It involves tasks such as handling missing values, removing duplicates, dealing with outliers, and reformatting data.
+
+## Data Preprocessing
+
+>Data preprocessing refers to the steps taken to prepare raw data for analysis. It involves cleaning the data, handling missing values, dealing with outliers, transforming variables, and more, to ensure the data is in a suitable form for further analysis.
+
+## Data Standardization
+
+>Data standardization, also known as data normalization, is the process of transforming data to have specific properties, such as zero mean and unit variance. It is commonly used to bring data onto a common scale, enabling fair comparisons between variables.
+
+## Normalization
+
+>Normalization is a data preprocessing technique used to scale numerical features to a standardized range. It ensures that variables with different scales or units have a comparable impact on the analysis. There are different types of normalization techniques:
+
+### Min-Max Normalization (or Rescaling)
+
+>Min-Max normalization scales the data to a specific range, often between 0 and 1. It is done using the following formula:
+>>X_normalized = (X - X_min) / (X_max - X_min)
+
+
+### Z-Score Normalization (or Standardization)
+
+Z-Score normalization, also known as standardization, transforms the data to have zero mean and unit standard deviation. It is done using the following formula:
+>>X_standardized = (X - mean(X)) / std(X)
+
+
+## Categorical to Quantitative Conversion
+
+Categorical variables represent distinct categories or groups. To convert categorical variables to a quantitative format, encoding techniques such as one-hot encoding or label encoding can be used. One-hot encoding creates binary columns for each category, while label encoding assigns a unique numeric value to each category.
+
+## Data Types
+
+Data types specify the type of values that can be stored in variables or columns. Some commonly used data types include:
+
+- Numeric data types: integer (`int`), floating-point (`float`)
+- Categorical data types: string (`str`), boolean (`bool`)
+- Date and time data types: datetime (`datetime`), timestamp (`timestamp`)
+
+# Viva Questions and Answers
+
+####  What is encoding in the context of data preprocessing?
+
+>Encoding refers to the process of transforming categorical variables into a numerical representation that can be used for analysis. It allows machine learning algorithms to work with categorical data.
+
+####  What is one-hot encoding?
+
+>One-hot encoding is a technique used to convert categorical variables into a binary representation. It creates binary columns for each category, where each column indicates the presence or absence of that category for a particular observation.
+
+#### How does one-hot encoding work?
+
+>One-hot encoding works by creating a binary column for each category in the original categorical variable. If a particular observation belongs to a category, the corresponding column value will be 1; otherwise, it will be 0.
+
+#### What is label encoding?
+
+>Label encoding is a technique used to convert categorical variables into numeric labels. It assigns a unique numeric value to each category, representing different levels of the categorical variable.
+
+#### How does label encoding work?
+
+>Label encoding works by assigning a numeric label to each category in the original categorical variable. Each category is mapped to a specific integer value, allowing machine learning algorithms to work with categorical data.
+
+####  What is the difference between one-hot encoding and label encoding?
+
+>One-hot encoding creates binary columns for each category, while label encoding assigns a unique numeric label to each category. 
+
+####  What are the advantages of one-hot encoding?
+
+>One-hot encoding allows categorical variables to be used directly as input for machine learning algorithms. It preserves the distinctiveness of each category and avoids imposing any arbitrary ordinal relationship between categories.
+
+#### When is label encoding preferred over one-hot encoding?
+
+>Label encoding is preferred when the categorical variable has an inherent ordinal relationship between categories. In such cases, label encoding captures the ordinality of the categories and can be beneficial for certain algorithms that can leverage this information.
+
+
+
